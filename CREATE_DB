@@ -1,0 +1,18 @@
+-- Run this SQL command in an SQLite session to create a table compatible with these scripts.
+CREATE TABLE "palette" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "file_url" TEXT,
+    "color_mean" INTEGER DEFAULT (-1),
+    "color_stddev" INTEGER DEFAULT (-1),
+    "tags" TEXT,
+    "query_pool" TEXT,
+    "license" INTEGER DEFAULT (-1),
+    "user" TEXT,
+    "user_fullname" TEXT,
+    "date_taken" TEXT,
+    "date_uploaded" TEXT,
+    "date_downloaded" TEXT,
+    "width" INTEGER DEFAULT (-1),
+    "height" INTEGER DEFAULT (-1),
+    "remote_url" TEXT
+)
